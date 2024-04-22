@@ -1,7 +1,7 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import ProjectsView from '../views/ProjectsView.vue'
-import AboutMeView from '../views/AboutMeView.vue'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
+import ProjectsView from '../views/ProjectsView.vue';
+import AboutMeView from '../views/AboutMeView.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -23,11 +23,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     redirect: '/HomeView'
   }
-]
+];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(),
   routes
-})
+});
 
-export default router
+export default router;
