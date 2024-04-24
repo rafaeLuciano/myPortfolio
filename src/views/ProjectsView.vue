@@ -74,4 +74,17 @@ export default {
     margin: 10px;
 }    
 
+@media screen and (max-width: 1020px) {
+    
+    .projectsShow, .projectsBottom, .projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    }
+    .projectsBottom, .projects{
+    padding: 0;
+    }
+  }
+
 </style>

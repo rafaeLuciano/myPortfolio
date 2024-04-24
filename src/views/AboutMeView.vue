@@ -2,9 +2,7 @@
     <div class="aboutMe">
         <div class="myText">
             <div class="dev">&lt;Dev&gt;</div>
-                <div class="devDescription">Olá! Sou Rafael Luciano, atualmente estou trabalhado como desenvolvedor RPA exercendo meus conhecimentos em C#, SQL e etc. Recentemente mudei meu curso de estudo e atuação para aquilo que me encantou desde meu ingresso na área de TI, O Front-End!
-Desde sempre enxerguei-me muito a par do meu lado criativo e decidi por fim criar meu portfólio. Visite  meus projetos na outra aba e se tiver alguma dúvida ou queria falar comigo sinta-se a vontade para me contatar em qualquer rede abaixo, obrigado!
-                </div>
+                <div class="devDescription">{{ text }}</div>
             <div class="devBottom">&lt;/Dev&gt;</div>
         </div>
         <div class="myContact">
@@ -33,7 +31,13 @@ Desde sempre enxerguei-me muito a par do meu lado criativo e decidi por fim cria
   
   <script lang="ts">
   export default {
-    name: "AboutMe"
+    name: "AboutMe",
+
+    data() {
+    return {
+      text: "Olá! Sou Rafael Luciano. Atualmente, estou trabalhando como desenvolvedor RPA, exercendo meus conhecimentos em C#, SQL, entre outros. Recentemente, mudei meu curso de estudo e atuação para aquilo que me encantou desde meu ingresso na área de TI: o Front-End!\n\nSempre me vi muito ligado ao meu lado criativo e decidi, por fim, criar meu portfólio. Visite meus projetos na outra aba e, se tiver alguma dúvida ou quiser falar comigo, sinta-se à vontade para me contatar em qualquer rede abaixo. Obrigado!"
+      };
+    }
   }
   </script>
   
@@ -41,19 +45,19 @@ Desde sempre enxerguei-me muito a par do meu lado criativo e decidi por fim cria
   .aboutMe{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 55px;
     padding-top: 25px;
 }
   .myContact {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
 }
 
   .myText{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
 }
   .dev{
     font-weight: bold;
@@ -94,7 +98,22 @@ Desde sempre enxerguei-me muito a par do meu lado criativo e decidi por fim cria
     padding-right: 200px;
     font-size: large;
     font-weight: 600;
+    white-space: pre-wrap; 
   }
 
+  @media screen and (max-width: 1020px) {
+
+  .myText, .myContact{
+    gap: 50px;
+    text-align: center;
+    }
+  .dev, .devBottom, .contacts, .contactPictures, .contactsBottom, .myText, .devDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    white-space: pre-wrap; 
+    }
+  }
 
   </style>

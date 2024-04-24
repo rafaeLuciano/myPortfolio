@@ -80,5 +80,32 @@ export default {
   color: rgb(56, 56, 56);
 }
 
+@media screen and (max-width: 1020px) {
+    
+  .home{
+  padding-top: 100px;
+  }
+
+  .bem{
+  font-weight: 650;
+  font-size: 85px;
+}
+
+  .vindo{
+  font-weight: 350;
+  color: rgb(56, 56, 56);
+  font-size: 85px;
+}
+
+
+.bemVindo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+}
+
 </style>
 

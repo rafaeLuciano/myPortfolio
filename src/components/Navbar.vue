@@ -97,5 +97,12 @@
 .dropdown-menu li:last-child {
   border-bottom: none;
 }
+
+@media screen and (max-width: 1020px) {
+    
+    .projectsButton, .aboutMeButton, .homeButton{
+    font-size: 15px;
+    }
+}
   </style>
   
