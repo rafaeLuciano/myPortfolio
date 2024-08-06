@@ -3,16 +3,24 @@
         <div class="projects">&lt;Projetos&gt;</div>
             <div class="projectsShow">
                 <div class="dSouto">
-                    <div class="capa">&lt;&gt;</div>
-                    <div class="nome">DSouto</div>
+                    <div class="capa">
+                        <img src="../assets/DSouto Site.png" alt="Capa DSouto">
+                    </div>
+                    <div class="nome">DSouto (Em Construção)</div>
                 </div>
                 <div class="aoServico">
-                    <div class="capa">&lt;&gt;</div>
-                    <div class="nome">AO Serviço</div>
+                    <div class="capa">
+                        <img src="../assets/AO Servico.png" alt="Capa AO Serviço">
+                    </div>
+                    <div class="nome">AO Serviço (Em Construção)</div>
                 </div>
-                <div class="utsumazy">
-                    <div class="capa">&lt;&gt;</div>
-                    <div class="nome">Utsumazy</div>
+                <div class="ician">
+                    <div class="capa">
+                        <a href="https://icianweb.netlify.app/" target="_blank">
+                            <img src="../assets/Ician Site.png" alt="Capa Ician Web">
+                        </a>
+                    </div>
+                    <div class="nome">Ician Web</div>
                 </div>
             </div>
         <div class="projectsBottom">&lt;/Projetos&gt;</div>
@@ -50,29 +58,38 @@ export default {
     .projectsHome{
     display: flex;
     flex-direction: column;
-    gap: 145px;
+    gap: 125px;
     padding-top: 25px;
 }
 
     .aoServico,
     .dSouto,
-    .utsumazy{
+    .ician{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+    .ician .capa img{
+        margin-top: 8px;
+    }
+
     .capa{
-    width: 290px;
-    height: 190px;
+    width: 350px;
+    height: 210px;
     background-color: #000000;
     color: #ffffff;
     font-size: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    border: 1px solid #000000; 
+    border-radius: 1rem; 
 }    
+
+.capa img {
+    border-radius: 1rem;
+}
 
 @media screen and (max-width: 1020px) {
     

@@ -3,7 +3,7 @@
       <router-link to="/HomeView" class="homeButton">&lt;Home&gt;</router-link>
       <router-link to="/AboutMeView" class="aboutMeButton">&lt;Sobre mim&gt;</router-link>
       <router-link to="/ProjectsView" class="projectsButton">&lt;Projetos&gt;</router-link>
-      <img src="../assets/ConfigButton.png" alt="Botão de configuração" class="configButton" @click="toggleDropdown">
+      <img src="../assets/config.svg" alt="Botão de configuração" class="configButton" @click="toggleDropdown">
       <div v-if="isDropdownVisible" class="dropdown-menu">
         <ul>
           <li>Língua: Português</li>
