@@ -9,19 +9,19 @@
             <div class="contacts">&lt;Contatos&gt;</div>
                 <div class="contactPictures">
                     <a href="https://github.com/rafaeLuciano" target="_blank">
-                        <img src="../assets/GitHub.png" alt="Imagem da logo do Github">
+                        <img class="git" src="../assets/GitHub.png" alt="Imagem da logo do Github">
                     </a>
                     <a href="https://www.linkedin.com/in/rafael-da-silva-luciano-6a0923226/" target="_blank">
-                        <img src="../assets/Linkedin.png" alt="Imagem da logo do Linkedin">
+                        <img class="linkedin" src="../assets/Linkedin.png" alt="Imagem da logo do Linkedin">
                     </a>
                     <a href="https://wa.me/5547988883216" target="_blank">
-                        <img src="../assets/WhatsApp.png" alt="Imagem da logo do WhatsApp">
+                        <img class="whats"  src="../assets/WhatsApp.png" alt="Imagem da logo do WhatsApp">
                     </a>
                     <a href="mailto:rafaeldasilva.luciano@gmail.com" target="_blank">
-                        <img src="../assets/Email.png" alt="Imagem da logo do Email">
+                        <img class="email"  src="../assets/Email.png" alt="Imagem da logo do Email">
                     </a>
                     <a href="https://www.instagram.com/rafaluciano_/" target="_blank">
-                        <img src="../assets/Instagram.png" alt="Imagem da logo do Instagram">
+                        <img class="insta"  src="../assets/Instagram.png" alt="Imagem da logo do Instagram">
                     </a>
                 </div>
             <div class="contactsBottom">&lt;/Contatos&gt;</div>
@@ -93,6 +93,21 @@
     padding-right: 200px;
   }
 
+  .contactPictures .git:hover{
+    filter: invert(40%);
+  }
+  .contactPictures .linkedin:hover{
+    filter: invert(40%);
+  }
+  .contactPictures .whats:hover{
+    filter: invert(40%);
+  }
+  .contactPictures .email:hover{
+    filter: invert(40%);
+  }
+  .contactPictures .insta:hover{
+    filter: invert(40%);
+  } 
   .devDescription{
     padding-left: 200px;
     padding-right: 200px;

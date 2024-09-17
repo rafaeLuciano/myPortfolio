@@ -3,23 +3,22 @@
         <div class="projects">&lt;Projetos&gt;</div>
             <div class="projectsShow">
                 <div class="dSouto">
-                    <div class="capa">
-                        <img src="../assets/DSouto Site.png" alt="Capa DSouto">
-                    </div>
-                    <div class="nome">DSouto (Em Construção)</div>
+                    <a href="https://dsoutoreformas.com.br/" target="_blank">
+                        <div class="capa"></div>
+                    </a>    
+                    <div class="nome">DSouto</div>
                 </div>
                 <div class="aoServico">
-                    <div class="capa">
-                        <img src="../assets/AO Servico.png" alt="Capa AO Serviço">
-                    </div>
-                    <div class="nome">AO Serviço (Em Construção)</div>
+                    <a href="https://aoservico.netlify.app/" target="_blank">
+                        <div class="capa">
+                        </div>
+                     </a>    
+                    <div class="nome">AO Serviço</div>
                 </div>
                 <div class="ician">
-                    <div class="capa">
-                        <a href="https://icianweb.netlify.app/" target="_blank">
-                            <img src="../assets/Ician Site.png" alt="Capa Ician Web">
-                        </a>
-                    </div>
+                    <a href="https://icianweb.netlify.app/" target="_blank">
+                        <div class="capa"></div>
+                    </a>
                     <div class="nome">Ician Web</div>
                 </div>
             </div>
@@ -70,8 +69,30 @@ export default {
     align-items: center;
 }
 
-    .ician .capa img{
-        margin-top: 8px;
+    .aoServico .capa {
+        background-image: url("../assets/AO Servico.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .ician .capa {
+        background-image: url("../assets/Ician Site.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .dSouto .capa {
+        background-image: url("../assets/DSouto Site.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .capa img{
+       margin-top: 8px;
+       object-fit: contain;
+       height: 100%;
+       width: 100%;
     }
 
     .capa{
