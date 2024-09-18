@@ -96,8 +96,8 @@ export default {
     }
 
     .capa{
-    width: 350px;
-    height: 210px;
+    width: 450px;
+    height: 270px;
     background-color: #000000;
     color: #ffffff;
     font-size: 45px;
@@ -105,11 +105,12 @@ export default {
     justify-content: center;
     align-items: center;
     border: 1px solid #000000; 
-    border-radius: 1rem; 
+    border-radius: 1px; 
 }    
 
-.capa img {
-    border-radius: 1rem;
+.nome {
+    font-size: 20px;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 1020px) {

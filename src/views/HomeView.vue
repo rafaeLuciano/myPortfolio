@@ -59,6 +59,7 @@ export default {
   flex-direction: column;
   align-items: center;
   gap: 0px;
+
 }
 
 .bemVindo{

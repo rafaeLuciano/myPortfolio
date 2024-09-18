@@ -46,6 +46,7 @@
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 20px;
+    font-weight: bold;
     padding-left: 20px;
   }
 
@@ -53,12 +54,14 @@
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 20px;
+    font-weight: bold;
   }
   
   .projectsButton {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 20px;
+    font-weight: bold;
   }
   
   .configButton {

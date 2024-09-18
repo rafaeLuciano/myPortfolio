@@ -111,7 +111,7 @@
   .devDescription{
     padding-left: 200px;
     padding-right: 200px;
-    font-size: large;
+    font-size: 20px;
     font-weight: 600;
     white-space: pre-wrap; 
   }
