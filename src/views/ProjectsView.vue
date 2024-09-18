@@ -124,6 +124,11 @@ export default {
     .projectsBottom, .projects{
     padding: 0;
     }
+    .capa{
+        width: 350px;
+        height: 210px;  
+        margin-top: 20px;
+    }
   }
 
 </style>

@@ -106,6 +106,12 @@
     .projectsButton, .aboutMeButton, .homeButton{
     font-size: 15px;
     }
+
+    .configButton {
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+  }
 }
   </style>
   
