@@ -69,7 +69,7 @@ export default {
   font-style: italic;
   font-family: 'Teko';
   font-size: 200px;
-  padding-top: 120px;
+  padding-top: 240px;
 }
 .bem{
  font-weight: 650;

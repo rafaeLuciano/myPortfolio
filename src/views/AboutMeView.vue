@@ -46,7 +46,7 @@
     display: flex;
     flex-direction: column;
     gap: 55px;
-    padding-top: 25px;
+    padding-top: 140px;
 }
   .myContact {
     display: flex;

@@ -58,7 +58,7 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 125px;
-    padding-top: 25px;
+    padding-top: 140px;
 }
 
     .aoServico,
