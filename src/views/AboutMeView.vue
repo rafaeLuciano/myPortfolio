@@ -35,7 +35,7 @@
 
     data() {
     return {
-      text: "Olá! Sou Rafael Luciano. Atualmente, estou trabalhando como desenvolvedor RPA, exercendo meus conhecimentos em C#, SQL, entre outros. Recentemente, mudei meu curso de estudo e atuação para aquilo que me encantou desde meu ingresso na área de TI: o Front-End!\n\nSempre me vi muito ligado ao meu lado criativo e decidi, por fim, criar meu portfólio. Visite meus projetos na outra aba e, se tiver alguma dúvida ou quiser falar comigo, sinta-se à vontade para me contatar em qualquer rede abaixo. Obrigado!"
+      text: "Olá! Sou Rafael Luciano. Atualmente, estou trabalhando como desenvolvedor RPA, exercendo meus conhecimentos em C#, SQL, APIs rest, entre outros. Recentemente, mudei meu curso de estudo e atuação para aquilo que me encantou desde meu ingresso na área de TI: o Front-End!\n\nSempre me vi muito ligado ao meu lado criativo e decidi, por fim, criar meu portfólio. Visite meus projetos na próxima aba e, se tiver alguma dúvida ou quiser falar comigo, sinta-se à vontade para me contatar em qualquer rede abaixo. Obrigado!"
       };
     }
   }
