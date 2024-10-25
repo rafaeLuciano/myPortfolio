@@ -1,31 +1,48 @@
 <template>
-    <div class="navbar">
-      <router-link to="/HomeView" class="homeButton">&lt;Home&gt;</router-link>
-      <router-link to="/AboutMeView" class="aboutMeButton">&lt;Sobre mim&gt;</router-link>
-      <router-link to="/ProjectsView" class="projectsButton">&lt;Projetos&gt;</router-link>
-      <div class="configButton"><ConfigHomeView/></div>
+  <div class="navbar">
+    <router-link to="/HomeView" class="homeButton">&lt;Home&gt;</router-link>
+    <router-link to="/AboutMeView" class="aboutMeButton">&lt;Sobre mim&gt;</router-link>
+    <router-link to="/ProjectsView" class="projectsButton">&lt;Projetos&gt;</router-link>
+    <div class="configButton">
+      <img src="../assets/config.svg" alt="" @click="toggleConfigHomeView">
     </div>
-  </template>
-  
-  <script lang="ts">
+    
+    <!-- Pop-up ConfigHomeView -->
+    <ConfigHomeView v-if="isConfigHomeVisible" @close="toggleConfigHomeView" />
+  </div>
+</template>
 
-  import ConfigHomeView from '../views/ConfigHomeView.vue';
+<script lang="ts">
+import { ref } from 'vue';
+import ConfigHomeView from '../views/ConfigHomeView.vue';
 
-  export default {      
-      name: "Navbar",
-      view: {
-        ConfigHomeView,
-      }
-}             
+export default {
+  name: "Navbar",
+  components: {
+    ConfigHomeView
+  },
+  setup() {
+    const isConfigHomeVisible = ref(false);
 
-  </script>       
+    const toggleConfigHomeView = () => {
+      isConfigHomeVisible.value = !isConfigHomeVisible.value;
+    };
+
+    return {
+      isConfigHomeVisible,
+      toggleConfigHomeView
+    };
+  }
+};
+</script>    
   
   <style>
 
-  .configButton {
-    background-color: blueviolet;
-  width: 200px;
-  height: 200px;
+  .configButton img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
   .navbar {
