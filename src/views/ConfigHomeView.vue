@@ -1,86 +1,66 @@
 <template>
-  <div class="div">
-    <img src="../assets/config.svg" alt="Botão de configuração" class="configButton">
-          <div v-if="isDropdownVisible" class="dropdown-menu">
-            <ul>
-              <li>Língua: Português</li>
-              <li>Modo: Light</li>
-            </ul>
-        </div>
-  </div>  
+  <div class="configBackdrop" @click.self="closeConfig">
+    <div class="configMenu">
+      <h2>Configurações</h2>
+      <button @click="closeConfig">X</button>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue';
 
-import { ref } from 'vue';
-
-export default {
-    name: "ConfigHomeView",
-    setup() {
-    const isDropdownVisible = ref(false);
-
-    function toggleDropdown() {
-      isDropdownVisible.value = !isDropdownVisible.value;
-    }
+export default defineComponent({
+  name: "ConfigHomeView",
+  emits: ['close'],
+  setup(_, { emit }) {
+    const closeConfig = () => {
+      emit('close');
+    };
 
     return {
-      isDropdownVisible,
-      toggleDropdown
+      closeConfig,
     };
   }
-}
+});
 </script>
 
 <style>
-
-.div {
-  background-color: blueviolet;
-  width: 200px;
-  height: 200px;
+.configBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
 
-.configButton {
-    width: 50px;
-    height: 50px;
-    padding-right: 20px;
-  }
-
-  .menu-icon {
-  cursor: pointer;
-  width: 30px; 
+.configMenu {
+  background-color: rgb(28, 28, 28);
+  width: 400px;
+  height: 600px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 8px;
+  font-family: 'Teko';
+  padding-top: 2px;
 }
 
-/*Config do menu abaixo*/
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%; 
-  right: 0; 
-  background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  width: 15%; 
+.configMenu h2 {
+  color: aqua;
+  margin-top: 24px;
 }
 
-.dropdown-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; 
+.configMenu button{
+  background-color: rgb(4, 255, 0);
+  margin-top: 12px;
+  margin-right: 12px;
 }
-
-.dropdown-menu li {
-  padding: 8px 16px;
-  border-bottom: 1px solid #ccc;
-  cursor: pointer;
-}
-
-.dropdown-menu li:last-child {
-  border-bottom: none;
-}
-
-@media screen and (max-width: 1020px) {
-    
-    
-  }
-
 </style>
